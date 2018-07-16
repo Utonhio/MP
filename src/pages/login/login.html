@@ -1,0 +1,60 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<ion-content scroll="disable" class="fondoimg">
+    <div class="loginContent">
+        <div  align= center class="loginImg">
+            <ion-img height="80" width="80" src="../../assets/imgs/logo.jpg" alt="LOGO M+P"></ion-img>
+            <h1>Un lugar donde podrás construir tus sueños.</h1>
+        </div>
+        <div class="loginRedes">
+            <ion-grid class="loginRedesAcomodo">
+                <ion-col>
+                    <ion-row>
+                        <button ion-button class="buttonSocialG" icon-start color="danger" md="logo-google" style="text-transform: none">
+                        <ion-icon name="logo-google"></ion-icon>
+                            Iniciar sesión con Google   &nbsp;&nbsp;&nbsp;
+                        </button>
+                    </ion-row>
+                    <ion-row>
+                        <button ion-button class="buttonSocialF"  icon-start md="logo-facebook" style="text-transform: none" (click)="goFacebook">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                            Iniciar sesión con Facebook 
+                        </button>
+                    </ion-row>
+                    <ion-row>
+                        <label><a (click)="goToSignup()">Seguir con el correo electrónico.</a> Al registrarte indicas que has leído y aceptado las <a (click)="inicio()">Condiciones de servicio</a> de Martinez Prado y las <a (click)="inicio()">Normas de privacidad.</a></label>
+                    </ion-row>
+                </ion-col>
+            </ion-grid>
+        </div>
+    <form [formGroup]="myForm" (ngSubmit)="loginUser()">    
+        <div class="loginSesion">
+          <ion-grid class="loginAcomodo"> 
+            <ion-col>
+                <ion-row>
+                    <ion-label class="Label1">Iniciar sesión</ion-label>
+                </ion-row>   
+                <ion-row>
+                    <input formControlName="email" type="text" placeholder="Correo electrónico" class="logInput">
+                </ion-row>
+                <ion-row>
+                    <br>
+                </ion-row>
+                <ion-row >
+                    <input formControlName="password" type="password" placeholder="Contraseña" class="logInput">
+                </ion-row>
+                <ion-row>
+                    <button ion-button type="submit" [disabled]="!myForm.valid" class="sesionButton">Iniciar sesion</button>
+                </ion-row>
+                <ion-row>
+                    <button (click)="goToResetPassword()" class="olvidado">¿Has olvidado la contraseña?</button>
+                </ion-row>
+            </ion-col>
+        </ion-grid>
+        </div>
+    </form>
+        <div class="loginAbout">
+               <p><a (click)="inicio()" id="aAbout">Sobre</a> <a (click)="inicio()" id="aAbout">Privacidad</a> ©MartinezPrado 2018.</p>
+        </div>
+    </div>
+    
+</ion-content>

@@ -1,0 +1,186 @@
+page-login {
+    .scroll-content{
+        overflow: hidden;
+    }
+    .loginContent{
+        background-color: rgb(255, 255, 255);
+        width: 654px;
+        position: absolute;
+        top: 47.7%;
+        left: 50%;
+        margin-left:-326.8px;
+        margin-top:-250px;
+        height:482px;
+        border:1px solid #808080;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding:5px;
+    }
+    .loginImg{
+        width: 654px;
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        margin-left:-326.8px;
+        margin-top:-260px;
+        height:160px;
+        border:1px solid #808080;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        border-bottom:hidden;
+        padding:5px;
+    }
+    .loginRedes{
+        width: 325px;
+        position: absolute;
+        top: 63.7%;
+        left: 50%;
+        margin-left:-325px;
+        margin-top:-100px;
+        height:180px;
+        padding:5px;
+    }
+    .loginAcomodo{
+        position: relative;
+        top:-30px;
+        left: 18px;
+    }
+    .loginRedesAcomodo{
+        position: relative;
+        top:-20px;
+        left:15px;
+    }
+    .loginSesion{
+        width: 325px;
+        position: absolute;
+        top: 57.7%;
+        left: 46.9%;
+        margin-left:18px;
+        margin-top: -71px;
+        height:180px;
+        border:.1px #ffffff;
+        border:.1px inset #ffffff;
+        border-top: hidden;
+        border-bottom: hidden;
+        padding:5px;
+    }
+    .loginAbout{
+        background-color: rgb(240, 240, 240);
+        width: 652px;
+        position: absolute;
+        top: 92%;
+        left: 50%;
+        margin-top:-20px;
+        margin-left:-326.6px;
+        height:70px;
+        border: .5px solid #dfdede;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding:5px;
+    }
+    a#aAbout{
+        color:gray;
+        text-decoration: none;
+    }
+    
+    ::placeholder{
+        color: rgb(124, 124, 124);
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:14px;
+        position: relative;
+        left:.5%;
+    }
+    .redondeado{
+        border-radius: 5px;
+        height: 30px;
+        background-color:red;
+    }
+    button.olvidado{
+        color:gray;
+        background-color: rgba(255, 255, 255, 0);   
+        font-size:12px;
+    }
+
+    h1{
+        color:rgb(167, 167, 167);
+        font-family: 'Comic sans';
+        font-weight: 100;
+    }
+    ion-label{
+        font: size 300;
+    }
+    .logInput{
+        width: 262.5px;
+        padding-left:5px;
+        height: 33px;
+        color: black;
+        background-color: rgb(235, 235, 235);
+        font-family: 'Comics sans';
+        border-radius: 5px;
+        border-width: .5px;
+        border-color: rgb(208, 207, 207);
+        border-style:solid;
+    }
+    ion-label.Label1{
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .sesionButton{
+        background-color: #3A7CAD;
+        position: absolute;
+        top: 150px;
+        left: 52.5%;
+        width: 35%;
+        height: 30px;
+        text-transform: none;
+        border-radius: 5px;
+        color:white;
+        
+    }
+    .logInput:active{
+        border-color: rgb(121, 121, 121);
+        
+    }
+    button.buttonSocialG{
+        background-color: rgb(228, 56, 56);
+        position: relative;
+        top: 10%;
+        right:0%;
+        width: 92%;
+        height: 40px;
+        text-transform: none;
+        border-radius: 5px;
+        color:white;
+    }
+    button.buttonSocialF{
+        background-color: rgb(65, 63, 209);
+        position: relative;
+        right:0%;
+        width: 92%;
+        height: 40px;
+        text-transform: none;
+        border-radius: 5px;
+        color:white;
+    }
+        button.sesionButton:hover{
+        border-color:rgb(26, 57, 80);
+        border-style: solid;
+        border-width:1px;
+    }
+    button.olvidado:hover{
+        text-decoration: underline;
+    }
+    button.buttonSocialG:hover{
+        background-color: rgba(228, 8, 8, 0.624);
+    }
+    button.buttonSocialF:hover{
+        background-color:rgba(107, 105, 233, 0.583);
+    }
+    ion-item{
+        background-color: black;
+    }
+    $text-input-placeholder-color: rgb(255, 0, 140);
+}
+//Todos los "login" son contenedores esparcidos para separar login, logo, about e inicio de sesion con redes sociales

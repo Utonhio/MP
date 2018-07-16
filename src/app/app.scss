@@ -1,5 +1,26 @@
 // http://ionicframework.com/docs/theming/
+.fondoimg{
+    background-image: url("../assets/imgs/mainBackground.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
 
+}
+.fondoimg2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../assets/imgs/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.fondoimg3{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("../assets/imgs/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 
 // App Global Sass
 // --------------------------------------------------

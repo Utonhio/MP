@@ -1,0 +1,85 @@
+<ion-content class="fondoimg">
+    <div class="loginContent">
+        <div  align= center class="loginImg">
+            <ion-img height="80" width="80" src="../../assets/imgs/logo.jpg" alt="LOGO M+P"></ion-img>
+            <h1>Un lugar donde podrás construir tus sueños.</h1>
+        </div>
+        <div class="loginRedes">
+            <form [formGroup]="myForm" (ngSubmit)="signup()">    
+            <ion-grid class="loginRedesAcomodo">
+                <ion-col>
+                    <ion-row> 
+                        <ion-label  class="Label1">Registrarse</ion-label>
+                    </ion-row>
+                    <ion-row  class="labelReg">
+                        <ion-label stacked class="Label1">Nombre</ion-label>
+                        <ion-label stacked class="Label1">Apellido(s)</ion-label>
+                    </ion-row>
+                    <ion-row  >
+                        <input  class="logInput4"formControlName="nombre" type="text">
+                        &nbsp;
+                        <input  class="logInput3" formControlName="apellidos" type="text" >
+                    </ion-row>
+                    <ion-row>
+                        <ion-label stacked class="Label1">Contraseña</ion-label>
+                    </ion-row>
+                    <ion-row>
+                            <input class="logInput2" formControlName="password" type="password">
+                    </ion-row>
+                    <ion-row>
+                            <ion-label stacked class="Label1">Confirmar contraseña</ion-label>
+                    </ion-row>
+                    <ion-row>
+                            <input class="logInput2" formControlName="password2" type="password" required>
+                    </ion-row>
+                    <ion-row>
+                            <ion-label stacked class="Label1">Correo electronico</ion-label>
+                    </ion-row>
+                    <ion-row>
+                        <input class="logInput2" formControlName="email" type="email">
+                    </ion-row>
+                    <ion-row>
+                        <p>Al hacer clic en "Registrarse", indicas que has leído y aceptado las Condiciones del servicio y la Política de privacidad de Quora.</p>
+                        <div padding>
+                            <ion-row>
+                                <button ion-button type="submit" class="cancelButton">Cancelar</button>
+                                <button ion-button block type="submit" [disabled]="!myForm.valid" class="sesionButton">Registrarse</button>
+                            </ion-row>
+                        </div>
+                    </ion-row>
+                </ion-col>
+            </ion-grid>
+            </form>
+        </div>
+        <form [formGroup]="myForm" (ngSubmit)="loginUser()">    
+                <div class="loginSesion">
+                  <ion-grid class="loginAcomodo">
+                    <ion-col>
+                        <ion-row>
+                            <ion-label stacked class="Label1">Correo electronico</ion-label>
+                        </ion-row>   
+                        <ion-row >
+                            <input formControlName="email" placeholder="Correo electrónico" class="logInput">
+                        </ion-row>
+                        <ion-row>
+                                <ion-label stacked class="Label1">Contraseña</ion-label>
+                        </ion-row>
+                        <ion-row >
+                            <input formControlName="password" type="password" placeholder="Contraseña" class="logInput">
+                        </ion-row>
+                        <ion-row>
+                            <button (click)="goToResetPassword()" class="olvidado">¿Has olvidado la contraseña?</button>
+                        </ion-row>
+                        <ion-row>
+                            <button ion-button type="submit" [disabled]="!myForm.valid" class="sesionButton">Iniciar sesion</button>
+                        </ion-row>
+                    </ion-col>
+                </ion-grid>
+                </div>
+            </form>
+        <div class="loginAbout">
+               <p><a (click)="inicio()" id="aAbout">Sobre</a> <a (click)="inicio()" id="aAbout">Privacidad</a> ©MartinezPrado 2018.</p>
+        </div>
+    </div>
+    
+</ion-content>
